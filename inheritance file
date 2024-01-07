@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class animal{
+public:
+void bark()
+{
+    cout<<"Animal barking:"<<endl;
+}
+};
+class cat:public animal{
+ public:
+ void sleep()
+ {
+    cout<<"cat sleep:"<<endl;
+ }
+};
+int main()
+{
+cat c;
+c.bark();//inherits the properties of animal class
+c.sleep();
+}
